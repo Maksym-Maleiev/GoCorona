@@ -295,7 +295,31 @@ body {
 }
 
 /* ---------------------------------- */
-
+.block-text {
+}
+.block-text__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.25;
+  color: #000;
+}
+.block-text__title:not(:last-child) {
+  margin: 0px 0px 12px 0px;
+}
+.block-text__title span {
+  color: #ec5863;
+}
+.block-text__title_blue span {
+  color: #4285f4;
+}
+.block-text__text {
+  line-height: 1.42;
+  letter-spacing: 0.08em;
+  margin: 0px 0px 24px 0px;
+}
+.block-text__button {
+}
+/* ---------------------------------- */
 .get-started {
   background-color: #fafbfd;
   padding: 150px 0px 50px 0px;
@@ -304,29 +328,52 @@ body {
 .get-started__container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .get-started__content {
-  flex: 0 1 50%;
+  flex: 0 1 48%;
+  padding: 0px 0px 0px 20px;
 }
 
-.block-text {
+.get-started__block-text {
+  max-width: 410px;
 }
 
-.block-text__title {
-}
-
-.block-text__title_blue span {
+.get-started-video {
+  flex: 1 1 100%;
+  padding: 0px 0px 0px 20px;
 }
 
 .video-get-started {
-  flex: 1 1 100%;
+  display: inline-flex;
+  align-items: center;
 }
 
 .get-started__image {
-  flex: 0 1 50%;
+  flex: 0 1 52%;
 }
 
 .get-started__image img {
   max-width: 100%;
+}
+
+.video-get-started__body {
+  margin: 0px 0px 0px 12px;
+}
+
+.video-get-started__title {
+  font-size: 13px;
+  line-height: 1.23;
+  letter-spacing: 0.08em;
+  color: #b0b0b0;
+  margin: 0px 0px 5px 0px;
+}
+
+.video-get-started__text {
+  font-size: 9px;
+  line-height: 1.22;
+  letter-spacing: 0.165em;
+  text-transform: uppercase;
+  color: #000000;
 }
