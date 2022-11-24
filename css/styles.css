@@ -517,12 +517,17 @@ body {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .stay-safe {
+    padding: 30px 0;
+  }
   .stay-safe__container {
     flex-direction: column-reverse;
   }
   .stay-safe__content {
     margin: 0px 0px 30px 0px;
   }
+}
+@media screen and (max-width: 479.98px) {
   .media-stay-safe {
     width: 290px;
   }
