@@ -297,6 +297,9 @@ body {
 /* ---------------------------------- */
 .block-text {
 }
+.block-text__center {
+  text-align: center;
+}
 .block-text__title {
   font-weight: 700;
   font-size: 44px;
@@ -316,6 +319,10 @@ body {
   line-height: 1.42;
   letter-spacing: 0.08em;
   margin: 0px 0px 24px 0px;
+}
+.block-text__text_mw {
+  max-width: 620px;
+  margin: 0 auto;
 }
 .block-text__button {
 }
@@ -531,6 +538,9 @@ body {
   .media-stay-safe {
     width: 290px;
   }
+  .media-stay-safe__image::after {
+    width: 154px;
+  }
 }
 
 /* ---------------------------------- */
@@ -545,7 +555,21 @@ body {
 .exsperts__block-text {
   max-width: 400px;
 }
+.exsperts__body {
+  display: flex;
+  align-items: center;
+}
+.exsperts__content {
+  flex: 0 1 50%;
+  padding: 0px 20px 0px 0px;
+}
 .exsperts__video {
+  flex: 0 1 50%;
+  padding: 0px 0px 30% 0px;
+  position: relative;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+  overflow: hidden;
 }
 .exsperts__video iframe {
   position: absolute;
@@ -555,11 +579,28 @@ body {
   left: 0;
   object-fit: cover;
 }
+
+@media screen and (max-width: 767.98px) {
+  .exsperts {
+    padding: 80px 0px 30px 0px;
+  }
+  .exsperts__body {
+    align-items: stretch;
+    flex-direction: column;
+  }
+  .exsperts__video {
+    padding: 0px 0px 58% 0px;
+  }
+  .exsperts__content {
+    padding: 0;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
 .statistics-exsperts {
   max-width: 655px;
   margin: 0 auto;
   position: relative;
-  z-index: 1;
 }
 .statistics-exsperts__body {
   position: relative;
@@ -585,9 +626,9 @@ body {
 .statistics-exsperts__decor_2 {
   width: 97px;
   height: 97px;
-  transform: rotate(105deg);
-  bottom: 60px;
-  left: 209px;
+  transform: rotate(30deg);
+  right: 50%;
+  top: -40px;
 }
 .statistics-exsperts__decor_3 {
   width: 127px;
@@ -625,4 +666,32 @@ body {
   letter-spacing: 0.37em;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media screen and (max-width: 767.98px) {
+  .statistics-exsperts__body {
+    margin: 0px 0px 50px 0px;
+  }
+  .body-statistics-exsperts {
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .body-statistics-exsperts {
+    flex-direction: column;
+  }
+
+  .body-statistics-exsperts__item:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+/* ----------------------------------- */
+.healthcare {
+}
+.healthcare__container {
+}
+.healthcare__block-text {
+  margin: 0px 0px 45px 0px;
 }
